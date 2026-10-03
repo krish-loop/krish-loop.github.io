@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Krishnaveni K | AI & Data Science Portfolio</title>
+<meta name="description" content="Portfolio of Krishnaveni K, BCA (Hons.) Artificial Intelligence & Data Science student at YIMS, Palakkad.">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#07040f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07040f;--bg2:#120a24;--v:#7c3aed;--vn:#a855f7;--lav:#c4b5fd;--lil:#e9d5ff;--pk:#ff2a7a;--blue:#60a5fa;--tx:#f5f3ff;--mu:#a89cc8;--glass:rgba(255,255,255,.04);--bd:rgba(168,85,247,.35)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px;background:var(--bg);color-scheme:dark}
+body{font-family:Inter,system-ui,sans-serif;color:var(--tx);background:radial-gradient(900px 600px at 80% 10%,rgba(124,58,237,.28),transparent 60%),radial-gradient(700px 500px at 0% 90%,rgba(124,58,237,.2),transparent 60%),var(--bg);overflow-x:hidden;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55));mix-blend-mode:multiply}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--lil);outline-offset:3px;border-radius:6px}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+/* preloader */
+#pre{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;transition:opacity .9s .1s,visibility .9s .1s}
+#pre.off{opacity:0;visibility:hidden}
+#pre svg{width:min(60vw,240px);animation:spin 6s linear infinite;filter:drop-shadow(0 0 18px var(--vn))}
+#pre b{position:absolute;width:26px;height:26px;border-radius:50%;background:var(--lil);box-shadow:0 0 40px 14px var(--vn);animation:eye 1.4s ease-in-out infinite}
+@keyframes eye{50%{transform:scale(1.7);opacity:.6}}@keyframes spin{to{transform:rotate(360deg)}}
+/* nav */
+nav{position:fixed;top:max(14px,env(safe-area-inset-top));right:16px;z-index:60;display:flex;gap:4px;padding:6px;border:1px solid var(--bd);border-radius:14px;background:rgba(18,10,36,.6);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 14px;border-radius:9px;color:var(--mu);position:relative;transition:.3s}
+nav a:hover,nav a.on{color:var(--lil);background:rgba(168,85,247,.16);text-shadow:0 0 12px var(--vn)}
+#bg{display:none;background:none;border:0;color:var(--lil);font-size:1.4rem;padding:6px 12px;cursor:pointer}
+/* hero */
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;padding:110px 6vw 70px;z-index:2;isolation:isolate}
+.stage{position:absolute;right:0;top:0;bottom:0;width:58%;z-index:-1;display:grid;place-items:center;pointer-events:none}
+.rune{position:absolute;width:min(60vw,700px);aspect-ratio:1;opacity:.1;animation:spin 90s linear infinite}
+.aura{position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:conic-gradient(from 0deg,transparent,rgba(168,85,247,.5),transparent 35%,rgba(196,181,253,.35),transparent 70%);filter:blur(60px);animation:spin 14s linear infinite}
+.ph{position:absolute;inset:0;transition:transform .2s ease-out}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;animation:float 7s ease-in-out infinite;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 38%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 38%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect;filter:saturate(1.1) contrast(1.05)}
+@keyframes float{50%{transform:translateY(-12px) scale(1.012)}}
+.wisp{position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:screen}
+.wisp path{fill:none;stroke-linecap:round;stroke-width:2;stroke-dasharray:60 340;animation:dash 5s linear infinite}
+.wisp path:nth-child(2){animation-duration:7s;stroke:var(--lav)}.wisp path:nth-child(3){animation-duration:9s;animation-direction:reverse}
+@keyframes dash{to{stroke-dashoffset:-800}}
+.txt{max-width:660px;position:relative}
+h1{font-family:Rajdhani,sans-serif;font-weight:700;font-size:clamp(2.6rem,13vw,6.2rem);white-space:nowrap;line-height:.95;letter-spacing:.02em;text-transform:uppercase;color:var(--lil);text-shadow:0 0 10px var(--lil),0 0 30px var(--vn),0 0 70px var(--v);position:relative;animation:breathe 4s ease-in-out infinite}
+h1 span{display:block}
+h1::before,h1::after{content:attr(data-t);position:absolute;inset:0;white-space:pre-line;opacity:.8;mix-blend-mode:screen;pointer-events:none}
+h1::before{color:var(--pk);animation:gl1 5s infinite steps(1)}h1::after{color:var(--blue);animation:gl2 5s infinite steps(1)}
+@keyframes gl1{0%,92%,100%{clip-path:inset(0 0 100% 0);transform:none}93%{clip-path:inset(20% 0 55% 0);transform:translateX(-6px)}96%{clip-path:inset(60% 0 10% 0);transform:translateX(5px)}}
+@keyframes gl2{0%,91%,100%{clip-path:inset(0 0 100% 0);transform:none}94%{clip-path:inset(45% 0 30% 0);transform:translateX(6px)}97%{clip-path:inset(5% 0 80% 0);transform:translateX(-4px)}}
+@keyframes breathe{50%{text-shadow:0 0 14px var(--lil),0 0 44px var(--vn),0 0 100px var(--v)}}
+.sub{margin-top:18px;font-family:Rajdhani;font-weight:500;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(.85rem,2.4vw,1.1rem);color:var(--lav)}
+.desc{margin:14px 0 26px;color:var(--mu);font-weight:300;line-height:1.6;max-width:46ch}
+form{display:grid;gap:12px}
+input,textarea{width:100%;font:400 .85rem Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--tx);background:var(--glass);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:.3s;resize:none}
+input::placeholder,textarea::placeholder{color:var(--mu)}
+input:focus,textarea:focus{outline:0;border-color:var(--vn);box-shadow:0 0 0 3px rgba(168,85,247,.2),0 0 24px rgba(168,85,247,.4)}
+.btn{position:relative;overflow:hidden;border:0;cursor:pointer;font:700 .95rem Rajdhani;letter-spacing:.16em;text-transform:uppercase;color:#fff;padding:16px;border-radius:10px;background:linear-gradient(135deg,var(--v),var(--vn));box-shadow:0 0 28px rgba(168,85,247,.6);animation:pulse 2.6s ease-in-out infinite;transition:transform .2s}
+.btn:hover{transform:translateY(-2px) scale(1.01)}.btn:active{transform:scale(.98)}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s}
+.btn:hover::after{left:130%}
+@keyframes pulse{50%{box-shadow:0 0 48px rgba(168,85,247,.95)}}
+.soc{display:flex;gap:12px;margin-top:26px}
+.soc a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--bd);background:var(--glass);transition:.3s}
+.soc a:hover{box-shadow:0 0 20px var(--vn);transform:translateY(-3px);border-color:var(--lil)}
+.soc svg{width:19px;height:19px;fill:var(--lil)}
+.copy{margin-top:22px;font-size:.7rem;color:var(--mu);letter-spacing:.05em}
+/* journey card */
+.jc{position:absolute;right:5vw;bottom:44px;width:min(300px,42vw);border:1px solid var(--vn);border-radius:14px;padding:16px;background:rgba(18,10,36,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 0 30px rgba(168,85,247,.35);cursor:pointer;text-align:left;color:var(--tx);font:inherit;z-index:3}
+.jc .play{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--v),var(--vn));display:grid;place-items:center;box-shadow:0 0 22px var(--vn);margin-bottom:10px}
+.jc .play::after{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.jc p{font-size:.82rem;line-height:1.45;min-height:3.6em;transition:opacity .35s}
+.jc small{display:block;margin-top:8px;font-family:Rajdhani;letter-spacing:.14em;color:var(--lav);font-weight:700}
+.flash{animation:flash .5s}@keyframes flash{30%{box-shadow:0 0 70px 10px var(--vn)}}
+/* sections */
+section{position:relative;z-index:2;padding:90px 6vw}
+h2{font-family:Rajdhani;font-size:clamp(2rem,6vw,3.6rem);text-transform:uppercase;letter-spacing:.04em;color:var(--lil);text-shadow:0 0 24px var(--vn);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px}
+.card{border:1px solid var(--bd);border-radius:16px;padding:22px;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:box-shadow .3s,border-color .3s;transform-style:preserve-3d}
+.card:hover{box-shadow:0 0 34px rgba(168,85,247,.4);border-color:var(--vn)}
+.card h3{font-family:Rajdhani;font-size:1.25rem;letter-spacing:.06em;color:var(--lav);margin-bottom:10px}
+.card p,.card li{color:var(--mu);font-size:.9rem;line-height:1.65;font-weight:300}
+.card ul{list-style:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{border:1px solid var(--bd);border-radius:99px;padding:8px 16px;font-size:.8rem;color:var(--lil);background:rgba(124,58,237,.12)}
+.lock{opacity:.8;text-align:center}.lock i{font-style:normal;font-size:2rem;display:block;filter:drop-shadow(0 0 12px var(--vn));animation:float 4s ease-in-out infinite}
+.note{margin-top:22px;color:var(--mu);font-size:.85rem}
+.big{font-family:Rajdhani;font-size:clamp(1.2rem,4.5vw,2.2rem);color:var(--lil);word-break:break-all;cursor:pointer;background:none;border:0;text-shadow:0 0 18px var(--vn)}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,120px);z-index:90;background:var(--v);padding:12px 22px;border-radius:99px;transition:.4s;box-shadow:0 0 30px var(--vn)}
+.toast.on{transform:translate(-50%,0)}
+.rv{opacity:0;filter:blur(10px);transform:translateY(30px);transition:1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;filter:none;transform:none}
+#cur{position:fixed;left:0;top:0;width:18px;height:18px;margin:-9px;border-radius:50%;background:var(--lil);box-shadow:0 0 22px 8px var(--vn);pointer-events:none;z-index:99;display:none;mix-blend-mode:screen;transition:width .25s,height .25s,margin .25s}
+#cur.big2{width:44px;height:44px;margin:-22px;opacity:.6}
+@media(pointer:fine){#cur{display:block}body{cursor:none}a,button,input,textarea{cursor:none}}
+@media(max-width:860px){
+ nav{left:12px;right:12px;flex-wrap:wrap;justify-content:space-between}#bg{display:block}
+ nav a{display:none;width:100%;text-align:center}nav.open a{display:block}
+ .stage{width:100%;opacity:.5}.ph img{-webkit-mask-image:linear-gradient(to bottom,#000 40%,transparent 95%);mask-image:linear-gradient(to bottom,#000 40%,transparent 95%)}
+ .hero{align-items:end;padding-bottom:40px}.jc{position:relative;right:auto;bottom:auto;width:100%;margin-top:26px;grid-row:2}.txt{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;filter:none;transform:none}#fx{display:none}}
+
+body.lock{overflow:hidden;touch-action:none}
+section{min-height:100svh;display:flex;flex-direction:column;justify-content:center}
+#go{width:100%;max-width:340px;margin-top:6px}
+.rune{overflow:visible;opacity:.15;width:min(70vw,780px)}.rune g{stroke:#c4b5fd;stroke-width:1.4;stroke-linecap:round}
+.ph::before,.ph::after{content:"";position:absolute;inset:0;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 38%),linear-gradient(to bottom,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 38%),linear-gradient(to bottom,#000 70%,transparent 100%);mask-composite:intersect}
+.ph::before{background:#7c3aed;mix-blend-mode:color;opacity:.3}
+.ph::after{background:linear-gradient(120deg,rgba(124,58,237,.85),rgba(168,85,247,.2) 70%);mix-blend-mode:soft-light}
+@media(max-width:860px){.ph::before,.ph::after{-webkit-mask-image:linear-gradient(to bottom,#000 40%,transparent 95%);mask-image:linear-gradient(to bottom,#000 40%,transparent 95%)}}
+.ph{transition:transform .2s ease-out,opacity 2s,filter 2s}.aura,.rune,.wisp{transition:opacity 2.4s}
+.hero:not(.s1) .ph{opacity:0;filter:blur(22px)}.hero:not(.s1) :is(.aura,.rune,.wisp){opacity:0}
+h1{transition:opacity .6s,clip-path 1.2s cubic-bezier(.7,0,.2,1)}
+.hero:not(.s2) h1{opacity:0;clip-path:inset(0 100% 0 0)}.hero.s2 h1{clip-path:inset(-40% -40% -40% -40%)}
+.sub{transition:opacity 1s,transform 1s,letter-spacing 1.4s}.hero:not(.s3) .sub{opacity:0;transform:translateY(14px);letter-spacing:.5em}
+:is(.desc,.btn,.soc,.copy,.jc){transition:opacity .9s,transform .9s}
+.hero:not(.s4) :is(.desc,.btn,.soc,.copy,.jc){opacity:0;transform:translateY(18px);pointer-events:none}
+#warp{position:fixed;inset:0;z-index:70;pointer-events:none;opacity:0;background:repeating-conic-gradient(at 50% 50%,rgba(233,213,255,.9) 0 .7deg,transparent .7deg 4.5deg);-webkit-mask-image:radial-gradient(circle,transparent 14%,#000 72%);mask-image:radial-gradient(circle,transparent 14%,#000 72%)}
+#warp.go{animation:warp .9s ease-out}@keyframes warp{0%{opacity:0;transform:scale(.6)}30%{opacity:1}100%{opacity:0;transform:scale(1.9)}}
+.cn{display:block;text-align:center;padding:44px 22px}.cn svg{width:50px;height:50px;fill:var(--lil);filter:drop-shadow(0 0 14px var(--vn));margin-bottom:14px}.cn p{word-break:break-all}
+.cn span{display:inline-block;margin-top:20px;padding:11px 24px;border-radius:99px;background:linear-gradient(135deg,var(--v),var(--vn));font:700 .85rem Rajdhani;letter-spacing:.14em;text-transform:uppercase;color:#fff;box-shadow:0 0 22px var(--vn)}
+.cn.in:hover{transform:translateY(-6px)}
+
+.rb{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;max-width:340px;transition:opacity .9s,transform .9s}.rb .gl{flex:1 1 140px}
+.hero:not(.s4) .rb{opacity:0;transform:translateY(18px);pointer-events:none}
+section .rb{max-width:none}section .rb .gl{flex:0 1 auto;padding:15px 26px}
+.gl{font:500 .78rem Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--lil);background:var(--glass);border:1px solid var(--bd);border-radius:10px;padding:13px 16px;cursor:pointer;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:.3s}
+.gl:hover{border-color:var(--vn);box-shadow:0 0 22px rgba(168,85,247,.5);transform:translateY(-2px)}
+#rm{position:fixed;inset:0;z-index:95;background:rgba(7,4,15,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:flex;flex-direction:column}#rm[hidden]{display:none}
+.rbar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:max(12px,env(safe-area-inset-top)) 16px 12px;border-bottom:1px solid var(--bd);font:700 1.1rem Rajdhani;letter-spacing:.14em;text-transform:uppercase;color:var(--lil)}.rbar span{display:flex;gap:8px}
+.rbody{flex:1;overflow:auto;padding:18px;-webkit-overflow-scrolling:touch}
+.rbody img{display:block;width:min(100%,860px);margin:0 auto;border-radius:10px;box-shadow:0 0 50px rgba(168,85,247,.45)}
+body.mo{overflow:hidden}
+</style></head><body class="lock"><div id="warp"></div>
+<div id="pre"><svg viewBox="0 0 100 100" fill="none" stroke="#a855f7" stroke-width="1.2"><polygon points="50,4 83,17 96,50 83,83 50,96 17,83 4,50 17,17"/><polygon points="50,18 74,26 82,50 74,74 50,82 26,74 18,50 26,26" stroke="#e9d5ff"/><circle cx="50" cy="50" r="14"/></svg><b></b></div>
+<canvas id="fx"></canvas><div id="cur"></div>
+<nav id="nav"><button id="bg" aria-label="Menu">☰</button>
+<a href="#home" class="on">Home</a><a href="#about">About</a><a href="#abilities">Abilities</a><a href="#certs">Certifications</a><a href="#connect">Connect</a></nav>
+
+<header class="hero" id="home">
+ <div class="stage" aria-hidden="true">
+  <svg class="rune" viewBox="0 0 100 100" fill="none" stroke="#c4b5fd" stroke-width=".6"><polygon points="50,2 84,16 98,50 84,84 50,98 16,84 2,50 16,16"/><polygon points="50,12 77,23 88,50 77,77 50,88 23,77 12,50 23,23"/><path d="M50 2V98M2 50H98M16 16L84 84M84 16L16 84"/><circle cx="50" cy="50" r="22"/></svg>
+  <div class="aura"></div>
+  <div class="ph" id="ph"><img src="photo.jpg" alt="Anime-style portrait of Krishnaveni K with long curly hair and glasses" width="900" height="1350"></div>
+  <svg class="wisp" viewBox="0 0 400 600" preserveAspectRatio="none"><path stroke="#60a5fa" d="M20 420C120 360 160 460 260 380S360 300 390 340"/><path d="M0 220C100 160 180 260 280 190S380 120 400 150"/><path stroke="#a855f7" d="M30 560C140 500 200 580 300 500S380 460 400 480"/></svg>
+ </div>
+ <div class="txt">
+  <h1 data-t="KRISHNAVENI"><span>Krishnaveni</span></h1>
+  <p class="sub">BCA (Hons.) AI &amp; Data Science | Future Data &amp; AI Builder</p>
+  <p class="desc">Unleash your potential. Join my journey through Artificial Intelligence, Data Science and Web Development, building practical skills one mission at a time.</p>
+  <button class="btn" id="go" type="button">Unlock my portfolio</button><div class="rb"><button class="gl" data-v type="button">View resume</button><button class="gl" data-d type="button">Download resume</button></div>
+  <div class="soc"><a href="https://www.linkedin.com/in/krishnaveni-k-b3861b417/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3zM9.75 9.75h3.8v1.6h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21h-4z"/></svg></a>
+  <a href="mailto:krisharaghav2007@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5.5 8-5.5V7zm16 3l-8 5.5L4 10v7h16z"/></svg></a></div>
+  <p class="copy">© Copyright · 2026 Krishnaveni K. All rights reserved.</p>
+ </div>
+ <button class="jc" id="jc" aria-label="Next journey slide"><div class="play"></div><p id="jt"></p><small id="jn"></small></button>
+</header>
+
+<section id="about"><h2 class="rv">Identity</h2><div class="grid">
+ <div class="card rv"><h3>Who I am</h3><p>Krishnaveni K, second-year BCA (Hons.) student in Artificial Intelligence &amp; Data Science at Yuvakshetra Institute of Management Studies (YIMS), University of Calicut, Mundur, Palakkad, Kerala, India.</p></div>
+ <div class="card rv"><h3>Education</h3><ul><li><b>BCA (Hons.) AI &amp; Data Science</b><br>YIMS, University of Calicut, 2025 to present</li><li style="margin-top:12px"><b>Higher Secondary, Computer Science</b><br>Bhavans Vidya Mandir, Bharatiya Vidya Bhavan</li></ul></div></div>
+ <div class="chips rv"><span>Artificial Intelligence</span><span>Data Science</span><span>Machine Learning</span><span>Software Development</span><span>Web Development</span><span>Data Analytics</span></div></section>
+
+<section id="abilities"><h2 class="rv">Abilities</h2><div class="grid">
+ <div class="card rv"><h3>Programming &amp; Databases</h3><p>Python · C · MySQL · SQL</p></div>
+ <div class="card rv"><h3>Web &amp; Digital</h3><p>Web Development · Digital Literacy · Data Management</p></div>
+ <div class="card rv"><h3>Linux &amp; Open Source</h3><p>Linux · Bash · Open-Source Software</p></div>
+ <div class="card rv"><h3>Digital Design</h3><p>GIMP · Digital Design</p></div>
+ <div class="card rv"><h3>Team &amp; Organisation</h3><p>Teamwork · Event Coordination · Volunteer Management</p></div></div></section>
+
+<section id="certs"><h2 class="rv">Certifications</h2><div class="grid">
+ <div class="card rv tilt"><h3>GIMP Training</h3><p>Digital Design</p></div><div class="card rv tilt"><h3>Linux, Spoken Tutorial</h3><p>Linux · Bash · Open Source</p></div>
+ <div class="card rv tilt"><h3>BLI-224: ICT Fundamentals</h3><p>Data Management · Digital Literacy</p></div><div class="card rv tilt"><h3>Patriotic Youth Ambassador</h3><p>Event Coordination · Volunteering · Teamwork</p></div>
+ <div class="card rv tilt"><h3>C Programming</h3><p>Yuvakshetra Institute of Management Studies</p></div><div class="card rv tilt"><h3>Python Programming</h3><p>Bharatiya Vidya Bhavan's</p></div>
+ <div class="card rv tilt"><h3>MySQL</h3><p>Bharatiya Vidya Bhavan's</p></div><div class="card rv tilt"><h3>Web Development</h3><p>Certification</p></div></div>
+ <p class="note rv">Detailed credentials and supporting documents are available upon request.</p></section>
+
+<section id="connect"><h2 class="rv">Connect</h2><p class="note rv" style="margin:-14px 0 28px">One tap and you are in touch.</p><div class="grid"><a class="card cn rv" href="mailto:krisharaghav2007@gmail.com"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5.5 8-5.5V7zm16 3l-8 5.5L4 10v7h16z"/></svg><h3>Gmail</h3><p>krisharaghav2007@gmail.com</p><span>Send an email</span></a><a class="card cn rv" href="https://www.linkedin.com/in/krishnaveni-k-b3861b417/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.75h4V21H3zM9.75 9.75h3.8v1.6h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05V21h-4v-4.8c0-1.15-.02-2.62-1.6-2.62-1.6 0-1.85 1.25-1.85 2.54V21h-4z"/></svg><h3>LinkedIn</h3><p>Krishnaveni K</p><span>Open profile</span></a></div><div class="rb rv" style="justify-content:center;margin-top:34px"><button class="gl" data-v type="button">View resume</button><button class="gl" data-d type="button">Download resume</button></div><p class="note rv" style="margin-top:40px">© Copyright · 2026 Krishnaveni K. All rights reserved.</p></section>
+<div class="toast" id="ts" role="status">Email copied!</div>
+
+<div id="rm" role="dialog" aria-modal="true" aria-label="Resume" hidden><div class="rbar"><b>Resume</b><span><button class="gl" data-d type="button">Download</button><button class="gl" id="rx" type="button" aria-label="Close resume">✕</button></span></div><div class="rbody"><img src="resume-preview.jpg" alt="Resume of Krishnaveni, BCA (Hons.) Artificial Intelligence and Data Science"></div></div>
+<script>
+const $=s=>document.querySelector(s),RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let sq=0;function seq(){if(sq++)return;$('#pre').classList.add('off');[0,1800,3200,4200].forEach((t,i)=>setTimeout(()=>$('#home').classList.add('s'+(i+1)),RM?0:t))}
+addEventListener('load',()=>setTimeout(seq,RM?0:1500));
+setTimeout(seq,4000);
+/* particles */
+const cv=$('#fx'),cx=cv.getContext('2d');let W,H,P=[];
+function rs(){const d=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*d;H=cv.height=innerHeight*d;P=Array.from({length:innerWidth<700?35:80},()=>({x:Math.random()*W,y:Math.random()*H,r:(Math.random()*2+.6)*d,v:(Math.random()*.5+.2)*d,s:Math.random()*6,c:Math.random()<.2?'168,85,247':'196,181,253'}))}
+rs();addEventListener('resize',rs);
+(function a(t){cx.clearRect(0,0,W,H);for(const p of P){p.y-=p.v;p.x+=Math.sin(t/1200+p.s)*.4;if(p.y<-10){p.y=H+10;p.x=Math.random()*W}cx.beginPath();cx.fillStyle=`rgba(${p.c},${.35+.35*Math.sin(t/700+p.s)})`;cx.shadowBlur=12;cx.shadowColor='rgba(168,85,247,.9)';cx.arc(p.x,p.y,p.r,0,7);cx.fill()}requestAnimationFrame(a)})(0);
+/* parallax (mouse, touch, tilt) */
+const ph=$('#ph'),st=document.querySelector('.stage');
+function par(x,y){if(RM)return;ph.style.transform=`translate(${x*-16}px,${y*-12}px)`;st.querySelector('.rune').style.marginLeft=x*24+'px'}
+addEventListener('pointermove',e=>par(e.clientX/innerWidth-.5,e.clientY/innerHeight-.5));
+addEventListener('deviceorientation',e=>{if(e.gamma!=null)par(Math.max(-.5,Math.min(.5,e.gamma/60)),Math.max(-.5,Math.min(.5,(e.beta-45)/90)))});
+/* cursor */
+const cu=$('#cur');addEventListener('pointermove',e=>{cu.style.transform=`translate(${e.clientX}px,${e.clientY}px)`;cu.classList.toggle('big2',!!e.target.closest('a,button,input,textarea'))});
+/* reveal + nav spy */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+const links=[...document.querySelectorAll('nav a')],sp=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')=='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('header,section').forEach(s=>sp.observe(s));
+$('#bg').onclick=()=>$('#nav').classList.toggle('open');links.forEach(l=>l.onclick=()=>$('#nav').classList.remove('open'));
+/* card tilt */
+document.querySelectorAll('.tilt').forEach(c=>{c.addEventListener('pointermove',e=>{if(e.pointerType!='mouse'||RM)return;const r=c.getBoundingClientRect();c.style.transform=`perspective(600px) rotateY(${((e.clientX-r.left)/r.width-.5)*14}deg) rotateX(${-((e.clientY-r.top)/r.height-.5)*14}deg)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
+/* journey */
+const J=[['2025','Started BCA (Hons.) Artificial Intelligence & Data Science.'],['2025 to present','Building foundations in programming, databases, Linux, digital technologies and web development.'],['Next','Growing technical skills through projects, internships and practical experience.']];let ji=0;
+function jr(){$('#jt').style.opacity=0;setTimeout(()=>{$('#jt').textContent=J[ji][1];$('#jn').textContent='0'+(ji+1)+'/03 · '+J[ji][0].toUpperCase();$('#jt').style.opacity=1},250);$('#jc').classList.remove('flash');void $('#jc').offsetWidth;$('#jc').classList.add('flash')}
+jr();$('#jc').onclick=()=>{ji=(ji+1)%3;jr();clearInterval(jt)};let jt=setInterval(()=>{ji=(ji+1)%3;jr()},6000);
+/* unlock */
+function unlock(){document.body.classList.remove('lock')}
+$('#go').onclick=()=>{$('#warp').classList.add('go');document.body.animate([{transform:'translate(0)'},{transform:'translate(-6px,4px)'},{transform:'translate(6px,-4px)'},{transform:'translate(0)'}],{duration:300});setTimeout(()=>{unlock();$('#about').scrollIntoView({behavior:RM?'auto':'smooth'})},380);setTimeout(()=>$('#warp').classList.remove('go'),1000)};
+document.querySelectorAll('nav a').forEach(l=>l.addEventListener('click',unlock));
+/* resume */
+const rm=$('#rm');
+function openR(){rm.hidden=false;document.body.classList.add('mo');$('#rx').focus()}
+function closeR(){rm.hidden=true;document.body.classList.remove('mo')}
+function dlR(){const a=document.createElement('a');a.href='resume.pdf';a.download='Krishnaveni-Resume.pdf';document.body.appendChild(a);a.click();a.remove()}
+document.querySelectorAll('[data-v]').forEach(b=>b.onclick=openR);document.querySelectorAll('[data-d]').forEach(b=>b.onclick=dlR);
+$('#rx').onclick=closeR;addEventListener('keydown',e=>e.key==='Escape'&&closeR());rm.addEventListener('click',e=>{if(e.target.classList.contains('rbody'))closeR()});
+/* trigram ring */
+{let g='';for(let i=0;i<8;i++){g+=`<g transform="rotate(${i*45} 50 50)">`+[0,1,2].map(k=>{const y=-10+k*2.6;return (i+k)%2?`<path d="M43.5 ${y}h5M51.5 ${y}h5"/>`:`<path d="M43.5 ${y}h13"/>`}).join('')+'</g>'}$('.rune').insertAdjacentHTML('beforeend',g)}
+</script></body></html>
